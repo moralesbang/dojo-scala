@@ -1,0 +1,51 @@
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:23:32: not found: value ActorMaterial[0m
+[0m[[0m[31merror[0m] [0m[0m  implicit val materizalizer = ActorMaterial()[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:33:38: not found: type JsonFormat1[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def studentFormat(Note: JsonFormat1 = jsonFormat3(Student.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:33:18: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def studentFormat(Note: JsonFormat1 = jsonFormat3(Student.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:33:77: not enough arguments for method apply: (name: String, id: String, notes: List[webServer.Note])webServer.Student in object Student.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters name, id, notes.[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def studentFormat(Note: JsonFormat1 = jsonFormat3(Student.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                            ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:36:40: not found: type JsonFormat1[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def courseFormat(Student: JsonFormat1 = jsonFormat3(Course.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:36:18: only traits and abstract classes can have declared but undefined members[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def courseFormat(Student: JsonFormat1 = jsonFormat3(Course.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:36:78: not enough arguments for method apply: (students: List[webServer.Student], name: String, id: String)webServer.Course in object Course.[0m
+[0m[[0m[31merror[0m] [0m[0mUnspecified value parameters students, name, id.[0m
+[0m[[0m[31merror[0m] [0m[0m    implicit def courseFormat(Student: JsonFormat1 = jsonFormat3(Course.apply()))[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:62:41: reference to Future is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.sun.corba.se.impl.orbutil.closure.Future[0m
+[0m[[0m[31merror[0m] [0m[0mand import scala.concurrent.Future[0m
+[0m[[0m[31merror[0m] [0m[0m    def fetchStudents(courseID: String):Future[Opetion[List[Student]]]= Future{[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:62:73: reference to Future is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.sun.corba.se.impl.orbutil.closure.Future[0m
+[0m[[0m[31merror[0m] [0m[0mand import scala.concurrent.Future[0m
+[0m[[0m[31merror[0m] [0m[0m    def fetchStudents(courseID: String):Future[Opetion[List[Student]]]= Future{[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:72:32: reference to Future is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport com.sun.corba.se.impl.orbutil.closure.Future[0m
+[0m[[0m[31merror[0m] [0m[0mand import scala.concurrent.Future[0m
+[0m[[0m[31merror[0m] [0m[0m            val maybeStudents: Future[Option[List[Student]]] = Operation.fetchStudents(courseId.toString)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:73:38: akka.http.scaladsl.server.Directive[maybeStudents.Out] does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m            onSuccess(maybeStudents) {[0m
+[0m[[0m[31merror[0m] [0m[0m                                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/juan/IdeaProjects/DojoScala/src/main/scala/main.scala:80:43: type mismatch;[0m
+[0m[[0m[31merror[0m] [0m[0m found   : akka.http.scaladsl.server.Route[0m
+[0m[[0m[31merror[0m] [0m[0m    (which expands to)  akka.http.scaladsl.server.RequestContext => scala.concurrent.Future[akka.http.scaladsl.server.RouteResult][0m
+[0m[[0m[31merror[0m] [0m[0m required: akka.stream.scaladsl.Flow[akka.http.scaladsl.model.HttpRequest,akka.http.scaladsl.model.HttpResponse,Any][0m
+[0m[[0m[31merror[0m] [0m[0m    val bindFuture = Http().bindAndHandle(route, "localhost",8080)[0m
+[0m[[0m[31merror[0m] [0m[0m                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0m12 errors found[0m
